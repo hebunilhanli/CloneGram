@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     android:theme ="@style/Custom_Theme">
+
+
+
+
+        <item
+            android:id="@+id/take"
+            android:icon="@drawable/camera"
+            android:title="Take Photo"
+
+            />
+
+        <item
+            android:id="@+id/choosee"
+            android:icon="@drawable/gallery"
+            android:title="Choose Photo" />
+
+        <item
+                android:id="@+id/logout"
+                android:title="Logout"></item>
+
+</menu>

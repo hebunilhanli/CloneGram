@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startscreen"
+    tools:context=".StartingProcess.Signup">
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="261dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/passwordSu"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/password"
+        android:ems="10"
+        android:gravity="left|center"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="55dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/emailSu"
+        app:layout_constraintTop_toBottomOf="@+id/emailSu" />
+
+    <EditText
+        android:id="@+id/emailSu"
+        android:layout_width="261dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/nameSurname"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/email"
+        android:ems="10"
+        android:gravity="left|center"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="55dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light_focused"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <EditText
+        android:id="@+id/passwordSu"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/emailSu"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/password"
+        android:ems="10"
+        android:gravity="left|center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="55dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/emailSu"
+        app:layout_constraintTop_toBottomOf="@+id/emailSu" />
+
+    <EditText
+        android:id="@+id/nameSurname"
+        android:layout_width="262dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/imageView6"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namesurname"
+        android:ems="10"
+        android:gravity="left|center"
+        android:hint="Fullname"
+        android:paddingLeft="55dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        app:srcCompat="@drawable/clonegram1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signup"
+        android:onClick="signUp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/photoiconxs" />
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="262dp"
+        android:layout_height="123dp"
+        android:layout_below="@+id/password2"
+        android:layout_centerHorizontal="true"
+        android:onClick="selectProfilePic"
+        app:srcCompat="@drawable/selectprofile" />
+
+</RelativeLayout>
